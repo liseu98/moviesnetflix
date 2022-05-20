@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@media (max-width: 460px) {
+	.contenedor{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 1130px) {
+	header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 600px;
+	}
+
+	main {
+		margin: 50px;
+	}
+
+	.search {
+		margin: 50px;
+	}
+
+	header img {
+		margin: auto;
+	}
+	
+	nav ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.search {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 94%);
+	color: white;
+}
+
+header{
+    background-image: url(https://media.lmneuquen.com/p/65630fa8af99436e9cfff185930718e4/adjuntos/195/imagenes/006/116/0006116074/1200x900/smart/netflix-estrenospng.png);
+    display: flex;
+	justify-content: space-evenly;
+}
+
+nav ul li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul{
+	display: flex;
+	margin: 50px;
+	gap: 50px;
+	justify-content: center;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	border-radius: 10px;
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: red;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+nav ul li a:hover {
+	background: black;
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header img{
+    width: 150px;
+    height:100px;
+	margin: auto 0px;
+}
+
+.contenedor {
+	width: 100%;
+    max-width: 1000px;
+	margin: 100px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: 2px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background:red;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: black;
+}
+
+.search input, .search button{
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 5px;
+	background: white;
+}
+
+.search button{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: black;
+}
+
+.search button:hover {
+	background: black;
+	color: white;
+}
+
+
